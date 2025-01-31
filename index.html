@@ -26,14 +26,17 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-                        'footer-bg': 'rgba(255, 220, 38, 0.5)'
+                        'footer-bg': 'rgba(255, 220, 38, 0.5)',
+                        'nav-bg': 'rgba(255, 249, 244, 1)',
+                        'nav-text': '#FFDC26'
+
                     }
                 }
             }
         }
     </script>
 
-
+<!-- style section -->
     <style>
         .font-sora {
             font-family: "Sora", serif;
@@ -42,12 +45,76 @@
         .font-adlam {
             font-family: "ADLaM Display", serif;
         }
+
+        .first-btn {
+            width: 117px;
+            height: 45px;
+            border: 1px solid rgba(255, 220, 38, 1);
+            border-radius: 8px;
+            margin-right: 3px;
+
+        }
+
+        .second-btn {
+            width: 117px;
+            height: 45px;
+            border: 1px solid;
+            border: none;
+            background-color: #FFDC26;
+            border-radius: 8px;
+        }
+
+        /* mobile device */
+        .hide {
+            display: none;
+        }
+
+        @media screen and (max-width:576px) {
+            .nav-title,
+            .nav-link,
+            .first-btn,
+            .second-btn,
+            .bell,
+            .search {
+                display: block;
+                display: none;
+            }
+            .bars {
+                display: block;
+                padding: 15px;
+                padding-left: 315px;
+            }
+            
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="font-sora">
+        <nav class="font-sora bg-nav-bg">
+            <div class="flex lg:justify-around py-5 px-4 md:px-16">
+                <div class="flex ">
+                    <img src="c1-assets/logo-header.png" alt=" logo">
+                    <h3 class="nav-title my-3 mx-5">Browse<span class="text-nav-text">4</span>Pets</h3>
+                    <i class=" bars fa-solid fa-bars hide"></i>
+                </div>
+
+                <div class="nav-link">
+                    <ul class=" flex my-3 space-x-5">
+                        <li><a href="">Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a href="">Contact us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="my-3">
+                    <i class="bell fa-regular fa-bell"></i>
+                    <i class=" search fa-solid fa-magnifying-glass"></i>
+                    <button class="first-btn">Login</button>
+                    <button class="second-btn">Register</button>
+                </div>
+            </div>
 
 
 
@@ -67,7 +134,7 @@
     <!-- footer section -->
     <footer class="font-sora bg-footer-bg py-10 px-4 md:px-16">
 
-        <div class=" lg:flex flex-wrap lg:gap-36 justify-center">
+        <div class=" lg:flex flex-wrap lg:gap-36 justify-around ">
 
             <!-- logo -->
 
@@ -81,9 +148,9 @@
             <!-- links -->
             <div>
                 <ul class="lg:space-y-5 space-y-3">
-                    <li><a href="" >Find a pet</a></li>
-                    <li><a href="" >Breeds</a></li>
-                    <li><a href="" >Contact us</a></li>
+                    <li><a href="">Find a pet</a></li>
+                    <li><a href="">Breeds</a></li>
+                    <li><a href="">Contact us</a></li>
                 </ul>
 
             </div>
