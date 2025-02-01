@@ -29,7 +29,9 @@
                         'footer-bg': 'rgba(255, 220, 38, 0.5)',
                         'nav-bg': 'rgba(255, 249, 244, 1)',
                         'nav-text': '#FFDC26',
-                        'main-bg': 'rgba(249, 223, 138, 1)'
+                        'main-bg': 'rgba(249, 223, 138, 1)',
+                        'main-bg-2': '#FFF9F4',
+                        'mini-card-bg': 'rgba(255, 255, 255, 1)'
 
                     }
                 }
@@ -156,15 +158,10 @@
             <div>
                 <img src="c1-assets/cat-big.png" alt="">
             </div>
-
-
-
-
-
-
         </section>
-
     </header>
+
+    <!-- main section -->
     <main class="font-adlam lg:max-w-7xl my-10 mx-auto">
         <!-- Browse By Categories -->
         <section>
@@ -175,88 +172,159 @@
                 <!-- card 1 -->
                 <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
                     <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/dog-cartoon.png"
-                        alt="dog"
-                        class="bg-white rounded-full" />
+                        <img src="c1-assets/dog-cartoon.png" alt="dog" class="bg-white rounded-full" />
                     </figure>
                     <div class="card-body items-center text-center">
-                      <h2 class="card-title">Dog</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
-                   <!-- card 2 -->
-                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/fish-cartoon.png"
-                        alt="fish"
-                        class="bg-white rounded-full" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Fish</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
-                   <!-- card 3 -->
-                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/cat-cartoon.png"
-                        alt="Cats"
-                        class="bg-white rounded-full" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Cats</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
-                   <!-- card 4 -->
-                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/bird-cartoon.png"
-                        alt="Birds"
-                        class="bg-white rounded-full" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Birds</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
-                   <!-- card 5 -->
-                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/mouse-cartoon.png"
-                        alt="Small pet"
-                        class="bg-white rounded-full"/>
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Small pet</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
-                   <!-- card 6 -->
-                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img
-                        src="c1-assets/rabbit-cartoon.png"
-                        alt="Rabbit"
-                        class=" bg-white rounded-full" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Rabbit</h2>
-                      <p class="font-sora">3 items</p>
-                      
-                    </div>
-                  </div>
+                        <h2 class="card-title">Dog</h2>
+                        <p class="font-sora">3 items</p>
 
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/fish-cartoon.png" alt="fish" class="bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Fish</h2>
+                        <p class="font-sora">3 items</p>
+
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/cat-cartoon.png" alt="Cats" class="bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Cats</h2>
+                        <p class="font-sora">3 items</p>
+
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/bird-cartoon.png" alt="Birds" class="bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Birds</h2>
+                        <p class="font-sora">3 items</p>
+
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/mouse-cartoon.png" alt="Small pet" class="bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Small pet</h2>
+                        <p class="font-sora">3 items</p>
+
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card bg-main-bg lg:w-[200px] w-[150px] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="Rabbit" class=" bg-white rounded-full" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rabbit</h2>
+                        <p class="font-sora">3 items</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Trending Pet Products section -->
+        <section class="my-10 bg-main-bg-2">
+            <h3 class="text-2xl pt-5">Trending Pet Products</h3>
+
+            <div class="max-w-[1600px] lg:flex lg:gap-10">
+                <!-- card section -->
+                <div class="lg:w-[424px] lg:h-[400px] bg-main-bg mt-10 rounded-lg relative">
+                    <div class="lg:absolute">
+                        <h1 class="text-2xl  p-5">T-shit for dog</h1>
+                        <p class="font-sora p-5">Discover a world of treats,<br> toys, and essentials <br>
+                            handpicked for</p>
+                        <button class="btn ml-5 font-sora">Shop Now</button>
+
+                    </div>
+                    <div class="ml-48">
+                        <img src="c1-assets/cute-pet-small.png" alt="">
+                    </div>
+
+                </div>
+                <!-- mini card section -->
+                <div class="lg:mt-10 mt-10 grid grid-cols-2 lg:grid-cols-3 lg:gap-10 gap-5">
+                    <!-- mini card 1 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 2 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 3 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 4 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 5 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 6 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 7 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 8 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+                    <!-- mini card 9 -->
+                    <div class="lg:w-[250px] lg:h-[100px] flex gap-5 bg-mini-card-bg justify-around items-center rounded-lg">
+                        <div><img class="bg-main-bg-2" src="c1-assets/dog-cartoon.png" alt=""></div>
+                        <div><i class="fa-regular fa-star"></i>
+                        <h4>pet bad</h4>
+                    <small>$39.99</small></div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
